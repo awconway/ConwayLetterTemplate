@@ -12,57 +12,10 @@
 #' @export
 letter <- function(...) {
   template <- system.file("rmarkdown/templates/Letter/resources/monashletter.tex",
-                          package="MonashEBSTemplates")
+                          package="ConwayLetterTemplate")
    bookdown::pdf_document2(...,
      template = template
    )
 }
 
 #' @rdname letter
-#' @export
-exam <- function(...) {
-  template <- system.file("rmarkdown/templates/Exam/resources/examtemplate.tex",
-                          package="MonashEBSTemplates")
-  bookdown::pdf_document2(...,
-                          template = template
-  )
-}
-
-#' @rdname letter
-#' @export
-workingpaper <- function(...) {
-  template <- system.file("rmarkdown/templates/WorkingPaper/resources/monashwp.tex",
-                          package="MonashEBSTemplates")
-  bookdown::pdf_document2(...,
-                          template = template
-  )
-}
-
-
-#' @rdname letter
-#' @export
-report <- function(...) {
-  template <- system.file("rmarkdown/templates/Report/resources/monashreport.tex",
-                          package="MonashEBSTemplates")
-  bookdown::pdf_document2(...,
-                          template = template
-  )
-}
-
-#' @rdname letter
-#' @export
-memo <- function(...) {
-  template <- system.file("rmarkdown/templates/Memo/resources/monashmemo.tex",
-                          package="MonashEBSTemplates")
-  bookdown::pdf_document2(...,
-                          citation_package = 'biblatex',
-                          template = template
-  )
-}
-
-#' @rdname letter
-#' @export
-slides <- function(...) {
-  binb::monash(...)
-}
-
