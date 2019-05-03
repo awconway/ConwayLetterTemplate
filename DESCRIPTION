@@ -1,7 +1,7 @@
-Package: MonashEBSTemplates
-Version: 0.2
-Title: Monash EBS Rmarkdown Templates
-Description: This package provides Rmarkdown templates for use at Monash University, Department of Econometrics & Business Statistics.
+Package: ConwayLetterTemplate
+Version: 1
+Title: Aaron Conway letter template
+Description: This package provides Rmarkdown letter template for Aaron Conway (modified from MonashEBSTemplates)
 Authors@R: person("Rob", "Hyndman", , "Rob.Hyndman@monash.edu", c("aut", "cre"))
 Imports: bookdown, binb (>= 0.0.3)
 License: GPL-3

@@ -1,0 +1,122 @@
+\documentclass[11pt,a4paper,]{letter}
+\usepackage{bera}
+
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{geometry}
+\geometry{a4paper, top=2cm, bottom=3cm, left=2cm, right=2cm}
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
+\usepackage{graphicx}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+\usepackage{color,hyperref,url,fontawesome}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+
+\newsavebox{\lethdone}
+\newsavebox{\lethdtwo}
+\newsavebox{\headname}
+
+\sbox{\lethdone}{\hbox{\includegraphics[width=6.5cm]{UHN.jpg}}}
+
+
+\newlength{\junkw}
+
+\makeatletter
+\def\ps@monash{\begin{textblock}{8}(1.2,1)
+\usebox{\lethdone}
+\end{textblock}
+\begin{textblock}{6}(13.5,1)
+\usebox{\headname}
+\end{textblock}
+\begin{textblock}{10}(1.2,27.2)\usebox{\lethdtwo}\end{textblock}\def\thepage{}}
+
+\@ifundefined{opening}{}{%
+\renewcommand*{\opening}[1]{\thispagestyle{monash}%
+   {\@date\par}%
+  \vspace{2\parskip}%
+  {\raggedright \toname \\ \toaddress \par}%
+  \vspace{2\parskip}%
+  #1\par\nobreak}}
+\makeatother
+
+\def\section#1{\vspace{0.3cm}\par{\textsf{\bfseries\Large #1}}\vspace*{0.02cm}\par}
+\def\subsection#1{\vspace{0.3cm}\par{\textsf{\bfseries\large #1}}\vspace*{0.02cm}\par} %}
+
+% Date
+\def\Date{\number\day}
+\def\Month{\ifcase\month\or
+ January\or February\or March\or April\or May\or June\or
+ July\or August\or September\or October\or November\or December\fi}
+\def\Year{\number\year}
+
+% Spacing
+\RequirePackage{setspace}
+
+% Fix href problems
+\def\href#1{}
+
+
+
+
+\sbox{\headname}{\parbox{10cm}{\fontsize{10}{12}\sffamily\color[gray]{0.4}
+{\large\textbf{Aaron Conway}}\\
+BN(Hons), PhD\\
+RBC Chair in Cardiovascular Nursing Research\\[0.2cm]
+\begin{tabular}{@{}ll@{}}
+      \faicon{home}       & aaronconway.info\\
+      \faicon{envelope}   & \href{mailto:aaron.conway@utoronto.ca}{\nolinkurl{aaron.conway@utoronto.ca}}\\
+      \faicon{phone}      & +1 (416) 946-7112
+\end{tabular}}}
+
+\date{\Date~\Month~\Year}
+
+\begin{document}
+\begin{letter}{Name of Journal\\Editorial Board}
+\setstretch{1}
+\vspace*{2cm}
+\opening{To the editor,}
+\setstretch{1.4}
+I am writing to ask you to \dots
+\closing{Regards\\[0.2cm]\hspace*{0.5cm}\includegraphics[height=1.5cm]{signature.jpg}\\Aaron Conway\\Peter Munk Cardiac Centre\\University Health Network}
+
+\end{letter}
+
+
+\end{document}
