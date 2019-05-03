@@ -235,8 +235,6 @@ $fromtitle$\\[0.2cm]
       \faicon{phone}      & $fromphone$
 \end{tabular}}}
 
-
-
 $if(date)$
 \date{$date$}
 $else$
@@ -253,8 +251,7 @@ $endfor$
 \opening{$opening$}
 \setstretch{$spacing$}
 $body$
-\closing{$closing$\\[0.2cm]\hspace*{0.5cm}\includegraphics[height=1.5cm]{$fromsignature$}}
-\sbox{\lethdtwo}{\hbox{\fontsize{9}{11}\sffamily\color[gray]{0.4}\begin{tabular}{@{}ll@{}}
+\closing\sbox{\lethdtwo}{\hbox{\fontsize{9}{11}\sffamily\color[gray]{0.4}\begin{tabular}{@{}ll@{}}
 \multicolumn{2}{@{}l}{Peter Munk Cardiac Centre}\\
 \multicolumn{2}{@{}l}{University Health Network}\\
 \multicolumn{2}{@{}l}{Toronto, Canada.}\\[0.2cm]
