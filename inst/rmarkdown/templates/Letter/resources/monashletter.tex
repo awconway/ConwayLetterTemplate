@@ -2,7 +2,8 @@
 $if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
 $else$
-\usepackage{bera}
+\renewcommand{\familydefault}{\sfdefault}  % sans serif font for entire letter
+\usepackage{lmodern}
 $endif$
 $if(linestretch)$
 \usepackage{setspace}
