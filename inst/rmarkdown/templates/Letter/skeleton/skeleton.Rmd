@@ -11,7 +11,7 @@ opening: To the editor,
 closing: Regards
 spacing: 1.4
 output: 
-    MonashEBSTemplates::letter:
+    ConwayLetterTemplate::letter:
       keep_tex: true
 ---
 
