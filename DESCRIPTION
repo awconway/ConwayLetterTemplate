@@ -2,7 +2,7 @@ Package: ConwayLetterTemplate
 Version: 1.0
 Title: Aaron Conway letter template
 Description: This package provides Rmarkdown letter template for Aaron Conway (modified from MonashEBSTemplates)
-Authors@R: person("Rob", "Hyndman", , "Rob.Hyndman@monash.edu", c("aut", "cre"))
+Authors@R: person("Aaron", "Conway", , "aaron.conway@utoronto.ca", c("aut", "cre"))
 Imports: bookdown, binb (>= 0.0.3)
 License: GPL-3
 Encoding: UTF-8

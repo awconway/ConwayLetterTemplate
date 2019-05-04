@@ -2,7 +2,7 @@
 % Please edit documentation in R/formats.R
 \name{letter}
 \alias{letter}
-\title{Output formats for Monash EBS documents}
+\title{Output format for letter}
 \usage{
 letter(...)
 }
@@ -14,8 +14,5 @@ An R Markdown output format object.
 }
 \description{
 Each function is a wrapper for \code{\link[bookdown]{pdf_document2}} to
-produce documents in Monash EBS style.
-}
-\author{
-Rob J Hyndman
+produce documents in ConwayLetterTemplate style.
 }
