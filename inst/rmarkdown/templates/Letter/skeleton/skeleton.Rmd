@@ -2,6 +2,7 @@
 from: Aaron Conway
 fromqualifications: BN(Hons), PhD
 fromtitle: RBC Chair in Cardiovascular Nursing Research
+fromaffilliation: Univeristy Health Network & University of Toronto
 fromWWW: aaronconway.info
 fromemail: aaron.conway@utoronto.ca
 fromphone: +1 (416) 946-7112
