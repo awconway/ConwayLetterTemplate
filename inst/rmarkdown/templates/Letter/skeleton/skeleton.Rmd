@@ -7,5 +7,7 @@ spacing: 1
 output: ConwayLetterTemplate::letter
 ---
 
-I am writing to ask you to \dots
+Thank you for allowing us to revise our manuscript for further consideration for publication. Please find our responses to the reviwers' comments below.
+
+
 
