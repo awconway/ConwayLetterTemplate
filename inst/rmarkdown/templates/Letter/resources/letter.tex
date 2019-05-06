@@ -252,7 +252,17 @@ $endfor$
 \opening{$opening$}
 \setstretch{$spacing$}
 $body$
-\closing{$closing$\\[0.2cm]\hspace*{0.5cm}\includegraphics[height=1.5cm]{signature.jpg}\\Aaron Conway\\Peter Munk Cardiac Centre\\University Health Network}
+\sbox{\headname}{\parbox{10cm}{\fontsize{10}{12}\sffamily\color[gray]{0.4}
+\closing{$closing$\\[0.2cm]\hspace*{0.5cm}\includegraphics[height=1.5cm]{signature.jpg}\\
+{\large\textbf{$from$}}\\
+$fromqualifications$\\
+$fromtitle$\\[0.2cm]
+\begin{tabular}{@{}ll@{}}
+      \faicon{home}       & $fromWWW$\\
+      \faicon{envelope}   & $fromemail$\\
+      \faicon{phone}      & $fromphone$
+\end{tabular}}}
+
 
 \end{letter}
 
