@@ -2,11 +2,9 @@
 toname: Name of Journal
 toaddress: Editorial Board
 opening: To the editor, 
-closing: Regards
-spacing: 1.4
-output: 
-    ConwayLetterTemplate::letter:
-      keep_tex: true
+closing: Regards,
+spacing: 1
+output: ConwayLetterTemplate::letter
 ---
 
 I am writing to ask you to \dots
