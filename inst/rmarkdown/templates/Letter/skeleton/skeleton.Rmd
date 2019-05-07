@@ -7,7 +7,7 @@ spacing: 1
 output: ConwayLetterTemplate::letter
 ---
 
-Thank you for allowing us to revise our manuscript for further consideration for publication. Please find our responses to the reviwers' comments below.
+Thank you for allowing us to revise our manuscript for further consideration for publication. Please find our responses to the comments from the reviewers below.
 
 
 
