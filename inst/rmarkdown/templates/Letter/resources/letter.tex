@@ -10,8 +10,6 @@ $if(linestretch)$
 \setstretch{$linestretch$}
 $endif$
 
-\usepackage{wallpaper}
-
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
@@ -110,6 +108,7 @@ $if(tables)$
 \IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
 $endif$
 \usepackage{graphicx}
+\usepackage{wallpaper}
 $if(graphics)$
 \usepackage{grffile}
 \makeatletter
