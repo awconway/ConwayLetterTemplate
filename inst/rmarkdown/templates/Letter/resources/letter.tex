@@ -10,6 +10,7 @@ $if(linestretch)$
 \setstretch{$linestretch$}
 $endif$
 
+\usepackage{svg}
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
@@ -181,7 +182,7 @@ $endif$
 \newsavebox{\lethdtwo}
 \newsavebox{\headname}
 
-\sbox{\lethdone}{\hbox{\includegraphics[width=6.5cm]{UHN.svg}}}
+\sbox{\lethdone}{\hbox{\includesvg[width=6.5cm]{UHN.svg}}}
 
 
 \newlength{\junkw}
